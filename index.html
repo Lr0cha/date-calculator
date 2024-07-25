@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem entre datas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Contagem entre datas</h1>
+    </header>
+    
+    <main>
+        <div class="logo">
+            <img src="img/img_calendar.svg" alt="Ícone de calendário">
+        </div>
+        <form>
+            <div class="title-form">
+                <h2>Selecione as datas:</h2>
+            </div>
+            <div class="input-box">
+                <div class="date-box">
+                    <i class="fa-regular fa-clock"></i>
+                    <label for="inicial_date">Data Inicial:</label>
+                    <input id="inicial_date" type="date" name="inicial_date" required>
+                </div>
+                <div class="date-box">
+                    <i class="fa-solid fa-clock"></i>
+                    <label for="final_date">Data Final:</label>
+                    <input id="final_date" type="date" name="final_date" required>
+                </div>
+                <div><button class="btn-forms" type="button" id="btn_values" onclick="checkInputs()">Calcular</button></div>  
+            </div>
+            <p id="error"></p>
+        </form>
+    </main>
+
+    <div class="popup" id="popup">
+        <h3 id="title-popup"></h3>
+        <ul>
+            <li><p id="response-days"></p></li>
+            <li><p id="response-weeks"></p></li>
+            <li><p id="response-months"></p></li>
+            <li><p id="response-years"></p></li>
+        </ul>
+        <button onclick="closeResult()">Fechar</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
