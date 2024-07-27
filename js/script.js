@@ -1,4 +1,5 @@
 function checkInputs(){
+    //pegar valores dos inputs do tipo data
     const inicial_date = form.getInitialDate().value;
     const final_date = form.getFinalDate().value;
     if (isDateValid(inicial_date) && isDateValid(final_date)){
@@ -13,10 +14,13 @@ function checkInputs(){
 
 function openResult(){  
     response.popup().classList.add("open-popup");
+    response.overlay().style.display="block";
+
 }
 
 function closeResult(){
    response.popup().classList.remove("open-popup");
+   response.overlay().style.display="none";
 }
 
 function InvalidDateMensage(){
@@ -75,6 +79,8 @@ const response ={
     months: () => document.getElementById("response-months"),
     years: () => document.getElementById("response-years"),
     popup: () => document.getElementById("popup"),
+    overlay: () => document.getElementById("overlay"),
 }
+
 
 
