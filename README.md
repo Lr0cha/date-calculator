@@ -10,7 +10,7 @@ Este projeto foi desenvolvido para praticar e aplicar conhecimentos em HTML, CSS
 
 ## Link do Projeto
 
-O site está disponível no no seguinte link: [Contagem entre datas](https://lr0cha.github.io/contagem-datas/)
+O site está disponível no no seguinte link: [Contagem entre datas](https://lr0cha.github.io/date-calculator/)
 
 ## Contribuições
 
